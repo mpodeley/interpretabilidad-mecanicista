@@ -1,0 +1,79 @@
+site_name: Interpretabilidad Mecanicista
+site_url: https://mpodeley.github.io/interpretabilidad-mecanicista/
+site_description: >-
+  Cómo piensan los modelos de lenguaje, por dentro. Interpretabilidad
+  mecanicista explicada bien llano, en español: un curso corto, recursos
+  curados, líneas de investigación abiertas y un blog de investigación.
+site_author: Matias Podeley
+repo_url: https://github.com/mpodeley/interpretabilidad-mecanicista
+repo_name: mpodeley/interpretabilidad-mecanicista
+
+theme:
+  name: material
+  language: es
+  custom_dir: overrides
+  favicon: assets/favicon.svg
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle:
+        icon: material/weather-night
+        name: Modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - toc.integrate
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - tables
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search:
+      lang: es
+  - blog:
+      blog_toc: true
+      archive_name: Archivo
+      categories_name: Categorías
+      post_url_format: "{date}/{slug}"
+  - rss:
+      match_path: "blog/posts/.*"
+      use_git: false
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+
+nav:
+  - Inicio: index.md
+  - Aprendé:
+      - Qué es (y por qué importa): curso/que-es.md
+      - El transformer por dentro: curso/transformer.md
+      - Features y superposición: curso/features.md
+      - Intervenciones causales: curso/intervenciones.md
+      - Circuitos: curso/circuitos.md
+      - SAEs y grafos de atribución: curso/sae.md
+  - Recursos para aprender: recursos.md
+  - Líneas de investigación: lineas.md
+  - Mi investigación: mi-investigacion.md
+  - Blog: blog/index.md
