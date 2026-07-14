@@ -1,0 +1,74 @@
+/* hero + tiles de la landing (claro y oscuro vía variables de Material) */
+.hero-sub {
+  font-size: 1.05rem;
+  color: var(--md-default-fg-color--light);
+  margin: 0.2rem 0 1.2rem;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 0.8rem;
+  margin: 1.2rem 0 1.4rem;
+}
+.stat {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.6rem;
+  padding: 0.9rem 1rem 0.8rem;
+  background: var(--md-code-bg-color);
+}
+.stat .n {
+  display: block;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--md-typeset-a-color);
+}
+.stat .d {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+  margin-top: 0.25rem;
+  line-height: 1.35;
+}
+.hero-buttons { margin: 0.6rem 0 1.4rem; }
+.hero-buttons .md-button { margin: 0 0.45rem 0.55rem 0; }
+.hero {
+  padding: 1.6rem 0 0.4rem;
+}
+.hero h1 {
+  font-size: 2.1rem;
+  line-height: 1.15;
+  margin-bottom: 0.4rem;
+  background: linear-gradient(90deg,
+    color-mix(in srgb, #4EA8DE 75%, var(--md-typeset-color)),
+    color-mix(in srgb, #43C59E 75%, var(--md-typeset-color)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.stat .n.accent-blue   { color: #4EA8DE; }
+.stat .n.accent-orange { color: #FF7B54; }
+.stat .n.accent-green  { color: #43C59E; }
+.stat .n.accent-gold   { color: #F2C14E; }
+@media (max-width: 480px) {
+  .hero h1 { font-size: 1.6rem; }
+}
+
+/* chips de nivel para la página de recursos */
+.chip {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  padding: 0.1rem 0.5rem;
+  vertical-align: 0.12rem;
+  margin-left: 0.3rem;
+}
+.chip.ini { background: color-mix(in srgb, #43C59E 18%, transparent); color: #2e9d7e; }
+.chip.med { background: color-mix(in srgb, #4EA8DE 18%, transparent); color: #3a86c8; }
+.chip.avz { background: color-mix(in srgb, #FF7B54 18%, transparent); color: #e0603a; }
+[data-md-color-scheme="slate"] .chip.ini { color: #43C59E; }
+[data-md-color-scheme="slate"] .chip.med { color: #4EA8DE; }
+[data-md-color-scheme="slate"] .chip.avz { color: #FF7B54; }
