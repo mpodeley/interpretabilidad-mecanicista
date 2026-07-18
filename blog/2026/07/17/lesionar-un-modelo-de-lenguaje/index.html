@@ -12,11 +12,11 @@
         <meta name="author" content="Matias Podeley">
       
       
-        <link rel="canonical" href="https://mpodeley.github.io/interpretabilidad-mecanicista/blog/2026/07/14/por-que-existe-este-sitio/">
+        <link rel="canonical" href="https://mpodeley.github.io/interpretabilidad-mecanicista/blog/2026/07/17/lesionar-un-modelo-de-lenguaje/">
       
       
+        <link rel="prev" href="../../14/por-que-existe-este-sitio/">
       
-        <link rel="next" href="../../17/lesionar-un-modelo-de-lenguaje/">
       
       
         
@@ -30,7 +30,7 @@
     
     
       
-        <title>Por qué existe este sitio - Interpretabilidad Mecanicista</title>
+        <title>Lesionar un modelo de lenguaje - Interpretabilidad Mecanicista</title>
       
     
     
@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#por-que-existe-este-sitio" class="md-skip">
+        <a href="#lesionar-un-modelo-de-lenguaje" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -130,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Por qué existe este sitio
+              Lesionar un modelo de lenguaje
             
           </span>
         </div>
@@ -676,7 +676,7 @@
                     <li class="md-nav__item">
                       <div class="md-nav__link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
-                        <time datetime="2026-07-14 00:00:00+00:00" class="md-ellipsis">14 de julio de 2026</time>
+                        <time datetime="2026-07-17 00:00:00+00:00" class="md-ellipsis">17 de julio de 2026</time>
                       </div>
                     </li>
                     
@@ -687,7 +687,7 @@
                           <span class="md-ellipsis">
                             en
                             
-                              <a href="../../../../category/meta/">Meta</a></span>
+                              <a href="../../../../category/investigaci%C3%B3n/">Investigación</a></span>
                         </div>
                       </li>
                     
@@ -698,7 +698,7 @@
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
                           <span class="md-ellipsis">
                             
-                              2 minutos de lectura
+                              6 minutos de lectura
                             
                           </span>
                         </div>
@@ -727,10 +727,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#el-recorrido" class="md-nav__link">
+  <a href="#primero-el-mapa-de-lo-que-no-se-puede-tocar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        El recorrido
+        Primero, el mapa de lo que no se puede tocar
       
     </span>
   </a>
@@ -738,10 +738,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lo-que-aprendi-que-este-sitio-intenta-transmitir" class="md-nav__link">
+  <a href="#validar-el-metodo-con-una-funcion-conocida" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Lo que aprendí que este sitio intenta transmitir
+        Validar el método con una función conocida
       
     </span>
   </a>
@@ -749,10 +749,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#que-va-a-haber-aca" class="md-nav__link">
+  <a href="#el-resultado-la-operacion-tiene-organo-la-entidad-no" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Qué va a haber acá
+        El resultado: la operación tiene órgano, la entidad no
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#areas-o-redes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Áreas o redes?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-scriptum-por-que-el-chico-necesita-una-cabeza-que-el-grande-no" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Post-scriptum: ¿por qué el chico necesita una cabeza que el grande no?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-letra-chica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La letra chica
       
     </span>
   </a>
@@ -777,54 +810,128 @@
   
 
 
-<h1 id="por-que-existe-este-sitio">Por qué existe este sitio</h1>
-<p>Hace unos meses no sabía qué era un residual stream. La semana pasada envié mi primer paper de
-interpretabilidad mecanicista a un workshop de EMNLP. Este sitio existe porque en el medio de
-esas dos oraciones hay un camino que casi nadie documenta — y menos en español.</p>
+<h1 id="lesionar-un-modelo-de-lenguaje">Lesionar un modelo de lenguaje</h1>
+<p>Los neuropsicólogos entendieron el cerebro, en buena parte, rompiéndolo: un paciente pierde una
+región por un ACV y de golpe no puede nombrar objetos aunque habla fluido, o habla en telegrama
+aunque entiende todo. Cada déficit <em>selectivo</em> es un mapa de qué hace cada pieza. Un modelo de
+lenguaje se deja lesionar con una precisión que ningún neurocirujano soñó — podés apagar una
+neurona exacta, en todas las posiciones, y medir qué se rompe. Así que lo hice.</p>
 <!-- more -->
 
-<h2 id="el-recorrido">El recorrido</h2>
-<p>Empecé como empieza casi todo el mundo en este campo: <strong>intentando replicar el resultado de
-otro</strong>. Un paper afirmaba que cierta estructura era legible en el estado interno de un modelo;
-armé el experimento, agregué los controles que me parecieron obvios (¿qué pasa con etiquetas
-permutadas? ¿con direcciones aleatorias del mismo tamaño?)… y el resultado original <strong>no
-sobrevivió</strong>. La réplica falló.</p>
-<p>Eso pudo ser el final — un rato de aprendizaje y a otra cosa. Pero la pregunta buena apareció
-justo ahí: si esta estructura no es real, ¿qué estructura <em>sí</em> sobrevive a todos los controles?
-Meses de experimentos después, la respuesta era publicable: el estado interno de un modelo
-pensando "la capital de Italia" <strong>factoriza en piezas</strong> — la cosa y la operación — que se pueden
-extraer, recombinar y volver a escribir adentro del modelo, que entonces <em>dice la respuesta</em>.
-El resultado, con sus 3 modelos, sus controles y sus dominios-donde-no-funciona, es
-<a href="../../../../../mi-investigacion/">el paper</a>, y tiene
-<a href="https://mpodeley.github.io/assembled-thought/">un sitio interactivo</a> donde podés jugar con los
-experimentos reales.</p>
-<h2 id="lo-que-aprendi-que-este-sitio-intenta-transmitir">Lo que aprendí que este sitio intenta transmitir</h2>
+<p>La pregunta venía de <a href="../../../../../mi-investigacion/">mi paper</a>: el pensamiento de un modelo sobre
+"la capital de Italia" se separa en dos piezas — <em>la cosa</em> (Italia) y <em>la operación</em>
+(capital-de). Si son piezas de verdad, deberían vivir en <strong>tejido</strong> distinto. ¿Hay un grupo de
+neuronas que hace "capital-de", separable de las que manejan "Italia"? Y si lo lesionás, ¿el
+modelo sufre una afasia específica?</p>
+<p>Reglas del juego, prestadas de la neuropsicología y adaptadas con la disciplina de controles del
+paper:</p>
 <ol>
-<li><strong>El campo es entrable.</strong> Todo lo que usé es público: modelos abiertos, una GPU modesta,
-   papers gratis, librerías open source. La barrera real es el mapa — saber qué leer, en qué
-   orden, y qué es señal versus ruido. Ese mapa es <a href="../../../../../curso/que-es/">el curso</a> y
-   <a href="../../../../../recursos/">los recursos</a>.</li>
-<li><strong>Los controles son el producto.</strong> La diferencia entre una anécdota y un resultado no está
-   en el efecto — está en los experimentos diseñados para matarlo. Mi réplica fallida fue más
-   valiosa que varios "éxitos" que tuve después, y le dedico
-   <a href="../../../../../curso/intervenciones/">una sección entera del curso</a>.</li>
-<li><strong>En español no había nada.</strong> Cuando busqué material de interpretabilidad mecanicista en mi
-   idioma encontré: una definición de diccionario y cobertura de diario. Para un campo que
-   se declara cuello de botella de talento, eso es un desperdicio — hay demasiada gente que
-   piensa en español como para que el material esté solo en inglés.</li>
+<li><strong>Localizar con un contraste.</strong> El diseño factorial del paper (12 países × 5 relaciones) <em>es</em>
+   un localizador de fMRI: para cada neurona calculo cuánta de su actividad explica <em>la
+   operación</em> versus <em>la entidad</em>. Eso rankea las neuronas por selectividad, exactamente como un
+   vóxel se rankea por su respuesta a un contraste.</li>
+<li><strong>Remover el tejido, no empujarlo.</strong> Una lesión no es <em>steering</em>: la neurona se apaga en
+   <strong>todas</strong> las posiciones, fijada a su valor medio, y el prompt hace la pregunta <strong>verdadera</strong>.
+   No estamos inclinando al modelo hacia una respuesta; le sacamos una pieza y miramos qué se
+   cae.</li>
+<li><strong>El déficit tiene que ser selectivo.</strong> Romper todo no enseña nada. La vara es: la lesión
+   dirigida daña <em>su</em> función y deja intactas las demás — y controles del mismo tamaño, en las
+   mismas capas, con la misma magnitud de activación, <strong>no</strong> reproducen el efecto.</li>
 </ol>
-<h2 id="que-va-a-haber-aca">Qué va a haber acá</h2>
+<h2 id="primero-el-mapa-de-lo-que-no-se-puede-tocar">Primero, el mapa de lo que no se puede tocar</h2>
+<p>Antes de buscar funciones hay que saber dónde está la infraestructura. Ablé <strong>cada una de las
+448 cabezas de atención</strong> de Qwen3-1.7B, una por vez. El resultado es un cerebro con una anatomía
+sorprendentemente humana: <strong>2 cabezas de 448 son intocables</strong> — una sola, L1H5, multiplica la
+perplejidad por <strong>19.7</strong> cuando la apagás; otra por 4.4 — y las <strong>446 restantes</strong> se pueden
+quitar de a una con costo casi nulo (la mediana cuesta ×1.003). Un tronco encefálico diminuto y
+una corteza enorme y redundante.</p>
+<p>Ese detalle no es decorativo: es la razón por la que todos los controles tienen que estar
+<strong>pareados por profundidad</strong>. Un control aleatorio global que por azar agarre L1H5 "le gana" a
+cualquier lesión dirigida por motivos que no tienen nada que ver con la función. (Y de hecho
+pasa: un control aleatorio de 48 cabezas que se traga a L1H5 dispara la perplejidad ×78.)</p>
+<p>Y acá el primer hallazgo inesperado: <strong>el tronco encefálico es un fenómeno de modelo chico.</strong> El
+mismo barrido en Qwen3-8B — las 1152 cabezas, una por vez — encuentra <strong>cero</strong> cabezas críticas.
+Ni una sola supera ×2; la peor cuesta menos que eso. El modelo chico guarda una cabeza que no
+puede perder; el grande, cuatro veces su tamaño, no guarda ninguna. <em>(Por qué — si la función se
+distribuyó o simplemente sobra a escala — es una pregunta que este post abre y ataca al final.)</em></p>
+<h2 id="validar-el-metodo-con-una-funcion-conocida">Validar el método con una función conocida</h2>
+<p>Antes de confiar en el bisturí sobre una función desconocida, lo pruebo en una que el campo ya
+resolvió: las <strong>induction heads</strong>, el circuito que copia patrones del contexto (lo cuenta la
+<a href="../../../../../curso/circuitos/">página de circuitos del curso</a>). Localizarlas y lesionar las 48 más
+selectivas: la capacidad de copiado colapsa <strong>−79%</strong>, mientras la perplejidad general
+(×1.24), la aritmética (100%) y la recuperación de hechos quedan intactas. Los controles pareados
+no la tocan. El método remueve una función conocida de forma selectiva. Luz verde.</p>
+<h2 id="el-resultado-la-operacion-tiene-organo-la-entidad-no">El resultado: la operación tiene órgano, la entidad no</h2>
+<p>Acá viene la asimetría, y es más interesante que la simetría que esperaba.</p>
+<p><strong>La red-operador es tejido removible de verdad.</strong> Lesionar las neuronas selectivas de operador
+produce el síntoma exacto que había pre-registrado — el modelo responde <em>sobre el país correcto,
+pero con la relación equivocada</em> — en <strong>los cuatro tamaños de lesión</strong>, ordenado por dosis, en
+<strong>los dos modelos</strong>. Con 512 neuronas (de ~172 mil) la recuperación relacional cae de 61.7% a
+<strong>18.3%</strong>, y el test estadístico honesto (Fisher exact contra el pool de todos los controles,
+2160 celdas, corregido por Bonferroni) da p desde 8.9e-05 hasta <strong>5.5e-09</strong>. La perplejidad se
+preserva en todo el rango. Es una afasia específica: el modelo "olvida qué le preguntaste" sin
+perder el lenguaje.</p>
+<p><strong>La red-operando no tiene órgano removible.</strong> La predicción era que, lesionada, el modelo diría
+<em>la capital de otro país</em> (relación intacta, entidad perdida). No pasa. En la posición de
+consulta, la lesión no hace nada por encima de los controles. Y probé la hipótesis mecánica
+obvia — que la entidad vive en el token del país, no en la consulta — lesionando <strong>ahí</strong>: falla
+también. Lo que se rompe ahí es destrucción genérica (la perplejidad se dispara) o, en el modelo
+grande, <em>la firma del operador otra vez</em>. Dos hipótesis muertas. La entidad no tiene, en ninguno
+de los dos lugares donde la busqué, un tejido que puedas quitar para producir su déficit
+específico.</p>
+<p>Esa es la novedad, y es honesta: <strong>una factorización simétrica en el álgebra no es simétrica en
+el tejido.</strong> El modelo <em>sí</em> separa la operación de la entidad —eso lo probó el paper por fuera—
+pero la operación tiene una región lesionable y la entidad se comporta como algo más
+distribuido, más redundante, sin un órgano que apagar. Es un paradigma de <strong>operadores</strong>.</p>
+<p>Un detalle de disciplina que me gusta contar porque casi me como un espejismo: cuando leí las
+generaciones crudas bajo la lesión de operando <em>creí</em> ver una anomia bellísima — <em>"es una
+ciudad… no sé cuál"</em>. Pero el scoring riguroso mostró que "degradado" es el sumidero donde cae
+<strong>toda</strong> falla (los controles ya están en ~37% de degradación), así que no puede contar como
+firma de nada. Estaba leyendo señal en el pozo. El resultado sobrevive sin ese adorno; el adorno
+no sobrevivía a su propio control.</p>
+<h2 id="areas-o-redes">¿Áreas o redes?</h2>
+<p>La última pregunta era geométrica: cuando una función <em>sí</em> tiene tejido, ¿está concentrada en un
+lugar (un "área", como el área de Broca) o desparramada (una "red")? La respuesta —midiendo la
+entropía de la distribución por capas contra un null de neuronas aleatorias— es que <strong>depende de
+la función</strong>. Las redes de operador y operando están <strong>concentradas</strong>, apiladas al 84–93% de
+profundidad (justo donde el paper había encontrado la palanca causal, hallada de nuevo por un
+método que no sabe nada del paper). En cambio la distinción texto-vs-símbolo está <strong>totalmente
+distribuida</strong> (indistinguible del azar). Un modelo con áreas localizadas y redes difusas
+conviviendo — igual que un cerebro.</p>
+<h2 id="post-scriptum-por-que-el-chico-necesita-una-cabeza-que-el-grande-no">Post-scriptum: ¿por qué el chico necesita una cabeza que el grande no?</h2>
+<p>Hay dos maneras en que el modelo grande podría "no necesitar" esa cabeza: la función se
+distribuyó en un <strong>conjunto</strong> de cabezas (ninguna sola es crítica, pero un grupo sí), o
+simplemente no la necesita. Una búsqueda greedy las distingue — quitar la cabeza cuya ablación
+cuesta más, repetir.</p>
+<p>En 1.7B el daño se <strong>compone catastróficamente</strong>: L1H5 sola ×19.7, y agregando de a una las
+peores, la perplejidad trepa a ×270, ×23.000, hasta <strong>×2.8 millones con 8 cabezas</strong>. Un núcleo
+crítico diminuto pero interdependiente. En 8B el mismo procedimiento con 12 cabezas llega a
+<strong>×4.3</strong>. No hay núcleo catastrófico — ni una cabeza, ni un conjunto chico. Seis órdenes de
+magnitud de diferencia. La respuesta es la segunda: <strong>el modelo grande no concentra su cómputo
+crítico en ningún puñado de cabezas.</strong> El chico apila trabajo que no puede perder en unas pocas;
+el grande lo desparrama tanto que ningún grupo chico importa.</p>
+<p>¿Y qué <em>hace</em> L1H5? La hipótesis obvia —que sea un <em>attention sink</em>, una cabeza que vuelca casi
+toda su atención al primer token (un patrón documentado como crítico)— <strong>es falsa</strong>. Sinks hay:
+L19H4 manda el 97.4% de su atención al token 0. Pero las cabezas críticas no son sinks: L1H5
+manda solo el <strong>1.3%</strong> (puesto 430 de 448). Es intocable por <em>otra</em> razón, todavía sin
+identificar — un cabo suelto, honesto.</p>
+<h2 id="la-letra-chica">La letra chica</h2>
 <ul>
-<li><strong>Réplicas comentadas</strong> de resultados del campo (con controles — siempre con controles).</li>
-<li><strong>Avances de mi propia agenda</strong>: el siguiente paso es usar
-  <a href="https://github.com/safety-research/circuit-tracer">circuit-tracer</a> para encontrar qué
-  cabezas y MLPs implementan la recombinación de piezas que mi paper demuestra por fuera.</li>
-<li><strong>Lecturas comentadas</strong> de papers nuevos, cuando aporten algo al mapa.</li>
-<li>Y lo que el camino traiga. Podés seguirlo por
-  <a href="https://mpodeley.github.io/interpretabilidad-mecanicista/feed_rss_created.xml">RSS</a>.</li>
+<li>Todo esto es <strong>un modelo y medio</strong> (Qwen3-1.7B, con réplica en 8B) sobre 12 países y 5
+  relaciones, en inglés. La red-operador replica en las dos escalas; la geometría también. El
+  brazo de cabezas del modelo chico es ilegible por culpa del sink, y el del grande es legible
+  pero no dice nada (la operación, a escala, no es un puñado de cabezas).</li>
+<li>Es <strong>inspiración metodológica</strong>, no una analogía literal con el cerebro. No comparé contra
+  datos de fMRI ni afirmo que una capa del modelo "es" un área de Brodmann. Presté el método —
+  localizar, lesionar, exigir selectividad — y todos los claims son sobre el modelo.</li>
+<li>Como siempre acá: cada número se recomputa desde artefactos persistidos
+  (<a href="https://github.com/mpodeley/jspace-qwen"><code>scripts/lesion_*.py</code></a> + <code>verify_numbers.py</code>), y
+  cada afirmación convive con el control que podría haberla matado. Un par de esos controles ya
+  me pescaron dos sobre-afirmaciones en el camino; quedaron corregidas en el registro.</li>
 </ul>
-<p>Si estás arrancando: <a href="../../../../../curso/que-es/">el curso empieza acá</a>. Si algo no se entiende,
-<a href="mailto:mpodeley@gmail.com">escribime</a> — que no se entienda es un bug de este sitio, no tuyo.</p>
+<p><em>Los detalles completos, con las tablas y los p-values, están en el
+<a href="https://mpodeley.github.io/jspace-qwen/findings/">cuaderno de resultados</a> (Parte 3). Si querés
+el contexto del paper primero: <a href="https://mpodeley.github.io/assembled-thought/es/explained/">el paper explicado fácil</a>.</em></p>
 
 
 
@@ -866,22 +973,22 @@ experimentos reales.</p>
       
       <nav class="md-footer__inner md-grid" aria-label="Pie" >
         
-        
           
-          <a href="../../17/lesionar-un-modelo-de-lenguaje/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Lesionar un modelo de lenguaje">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Siguiente
-              </span>
-              <div class="md-ellipsis">
-                Lesionar un modelo de lenguaje
-              </div>
-            </div>
+          <a href="../../14/por-que-existe-este-sitio/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Por qué existe este sitio">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Por qué existe este sitio
+              </div>
             </div>
           </a>
+        
         
       </nav>
     
